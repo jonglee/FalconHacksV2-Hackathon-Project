@@ -14,54 +14,51 @@
 </head>
 <body>
 
-<header class="header">
+    <header class="header">
    
-   <section class="flex">
-
-      <a href="home.html" class="logo">Learn Hub</a>
-
-            <div class="icons">
-         <div id="menu-btn" class="fas fa-bars"></div>
-         <div id="search-btn" class="fas fa-search"></div>
-         <div id="user-btn" class="fas fa-user"></div>
-         <div id="toggle-btn" class="fas fa-sun"></div>
-      </div>
-
-      <div class="profile">
-         <img src="images/pic-1.jpg" class="image" alt="">
-         <h3 class="name">User</h3>
-         
-         <a href="profile.html" class="btn">view profile</a>
-         <div class="flex-btn">
-            <a href="login.html" class="option-btn">login</a>
-            <a href="register.html" class="option-btn">register</a>
-         </div>
-      </div>
-
-   </section>
-
-</header>   
+        <section class="flex">
+     
+           <a href="home.html" class="logo">Learn Hub</a>
+     
+                 <div class="icons">
+              <div id="menu-btn" class="fas fa-bars"></div>
+              <div id="search-btn" class="fas fa-search"></div>
+              <div id="user-btn" class="fas fa-user"></div>
+              <div id="toggle-btn" class="fas fa-sun"></div>
+           </div>
+     
+           <div class="profile">
+              <img src="images/pic-1.jpg" class="image" alt="">
+              <h3 class="name">User</h3>
+              
+              <a href="profile.html" class="btn">view profile</a>
+              
+           </div>
+     
+        </section>
+     
+     </header>   
+     
 
 <div class="side-bar">
 
-   <div id="close-btn">
-      <i class="fas fa-times"></i>
-   </div>
-
-   <div class="profile">
-      <img src="images/pic-1.jpg" class="image" alt="">
-      <h3 class="name">User</h3>
-      
-      <a href="profile.html" class="btn">view profile</a>
-   </div>
-
-   <nav class="navbar">
-      <a href="home.html"><i class="fas fa-home"></i><span>Home</span></a>
-      <!-- <a href="about.html"><i class="fas fa-question"></i><span>About</span></a> -->
-      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Study</span></a>
-      <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>Coffee Talk</span></a>
-       </nav>
-
+        <div id="close-btn">
+           <i class="fas fa-times"></i>
+        </div>
+     
+        <div class="profile">
+           <img src="images/pic-1.jpg" class="image" alt="">
+           <h3 class="name">User</h3>
+           
+           <a href="profile.html" class="btn">view profile</a>
+        </div>
+     
+        <nav class="navbar">
+           <a href="home.html"><i class="fas fa-home"></i><span>Home</span></a>
+        
+           <a href="study.html"><i class="fas fa-graduation-cap"></i><span>Study</span></a>
+           <a href="coffeetalk.html"><i class="fas fa-chalkboard-user"></i><span>Coffee Talk</span></a>
+            </nav>
 </div>
 
 <section class="home-grid">
@@ -73,7 +70,7 @@
           <h2>To-Do List <img src="images/icon.png"></h2>
           <div class="row">
               <input type="text" id="input-box" placeholder="Add your jobs">
-              <button onclick="addTask()">Thêm</button>
+              <button onclick="addTask()">Add</button>
           </div>
           <ul id="list-container">
              
@@ -103,10 +100,10 @@
 
 <form id="scheduleForm">
     <label for="time">Times:</label>
-    <input type="text" id="time" name="time" required>
+    <input type="text" id="time" name="time" placeholder="Add time">
 
     <label for="subject">Subjects:</label>
-    <input type="text" id="subject" name="subject" required>
+    <input type="text" id="subject" name="subject" placeholder="Add">
 
     <button type="button" onclick="addSchedule()">Add to schedule</button>
 </form>

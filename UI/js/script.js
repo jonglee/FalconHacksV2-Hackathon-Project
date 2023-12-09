@@ -135,3 +135,6 @@ function removeSchedule(button) {
 
     localStorage.setItem('timetableData', document.getElementById('time-table').innerHTML);
 }
+
+
+
