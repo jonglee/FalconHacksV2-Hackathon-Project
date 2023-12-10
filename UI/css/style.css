@@ -937,144 +937,7 @@ section{
    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
-/* .teachers .search-tutorial{
-   margin-bottom: 2rem;
-   border-radius: .5rem;
-   background-color: var(--white);
-   padding: 1.5rem 2rem;
-   display: flex;
-   align-items: center;
-   gap: 1.5rem;
-}
 
-.teachers .search-tutorial input{
-   width: 100%;
-   background: none;
-   font-size: 1.8rem;
-   color: var(--black);
-}
-
-.teachers .search-tutorial button{
-   font-size: 2rem;
-   color: var(--black);
-   cursor: pointer;
-   background:none;
-}
-
-.teachers .search-tutorial button:hover{
-   color: var(--main-color);
-}
-
-.teachers .box-container{
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-   gap:1.5rem;
-   justify-content: center;
-   align-items: flex-start;
-}
-
-.teachers .box-container .box{
-   background-color: var(--white);
-   border-radius: .5rem;
-   padding: 2rem;
-}
-
-.teachers .box-container .offer{
-   text-align: center;
-}
-
-.teachers .box-container .offer h3{
-   font-size: 2.5rem;
-   color: var(--black);
-   text-transform: capitalize;
-   padding-bottom: .5rem;
-}
-
-.teachers .box-container .offer p{
-   line-height: 1.7;
-   padding: .5rem 0;
-   color: var(--light-color);
-   font-size: 1.7rem;
-}
-
-.teachers .box-container .box .tutorial{
-   display: flex;
-   align-items: center;
-   gap:2rem;
-   margin-bottom: 1.5rem;
-}
-
-.teachers .box-container .box .tutorial img{
-   height: 5rem;
-   width: 5rem;
-   border-radius: 50%;
-}
-
-.teachers .box-container .box .tutorial h3{
-   font-size: 2rem;
-   color: var(--black);
-   margin-bottom: .2rem;
-}
-
-.teachers .box-container .box .tutorial span{
-   font-size: 1.6rem;
-   color: var(--light-color);
-}
-
-.teachers .box-container .box p{
-   padding: .5rem 0;
-   font-size: 1.7rem;
-   color: var(--light-color);
-}
-
-.teachers .box-container .box p span{
-   color: var(--main-color);
-}
-
-.teacher-profile .details{
-   text-align: center;
-   background-color: var(--white);
-   border-radius: .5rem;
-   padding: 2rem;
-}
-
-.teacher-profile .details .tutorial img{
-   height: 10rem;
-   width: 10rem;
-   border-radius: 50%;
-   object-fit: cover;
-   margin-bottom: 1rem;
-}
-
-.teacher-profile .details .tutorial h3{
-   font-size: 2rem;
-   color: var(--black);
-}
-
-.teacher-profile .details .tutorial span{
-   color: var(--light-color);
-   font-size: 1.7rem;
-}
-
-.teacher-profile .details .flex{
-   display: flex;
-   flex-wrap: wrap;
-   gap: 1.5rem;
-   margin-top: 2rem;
-}
-
-.teacher-profile .details .flex p{
-   flex: 1 1 20rem;
-   border-radius: .5rem;
-   background-color: var(--light-bg);
-   padding: 1.2rem 2rem;
-   font-size: 1.8rem;
-   color: var(--light-color);
-}
-
-.teacher-profile .details .flex p span{
-   color: var(--main-color);
-} */
 
 .user-profile .info{
    background-color: var(--white);
@@ -1146,6 +1009,14 @@ section{
 .user-profile .info .box-container .box .flex p{
    color: var(--light-color);
    font-size: 1.7rem;
+}
+
+.user-profile .info .data{
+   font-size: medium;   
+   margin-top: 20px;
+   border: 2px solid #3a3a3a;
+   padding: 10px;
+   border-radius: 10px;
 }
 
 .contact .row{
@@ -1375,6 +1246,48 @@ section{
 
 }
 
+
+.people .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+   gap:1.5rem;
+   justify-content: center;
+   align-items: flex-start;
+}
+.people .box-container .box{
+   background-color: var(--white);
+   border-radius: .5rem;
+   padding: 2rem;
+}
+.people .box-container .box .person{
+   display: flex;
+   align-items: center;
+   gap:2rem;
+   margin-bottom: 1.5rem;
+}
+.people .box-container .box .person img{
+   height: 5rem;
+   width: 5rem;
+   border-radius: 50%;
+}
+.people .box-container .box .person h3{
+   font-size: 2rem;
+   color: var(--black);
+   margin-bottom: .2rem;
+}
+.people .box-container .box .person span{
+   font-size: 1.6rem;
+   color: var(--light-color);
+}
+.people .box-container .box p{
+   padding: .5rem 0;
+   font-size: 1.7rem;
+   color: var(--light-color);
+}
+.people .box-container .box p span{
+   color: var(--main-color);
+}
+
 /*todolist */
 *{
     margin: 0;
@@ -1530,3 +1443,40 @@ ul li span:hover{
     background-color: #f03a26; /* Darker blue on hover */
 }
 
+/* update form */
+#updateForm {
+   max-width: 400px;
+   margin: 0 auto;
+   padding: 20px;
+   border: 1px solid #ccc;
+   border-radius: 8px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+   display: block;
+   margin-bottom: 8px;
+   font-weight: bold;
+}
+
+input {
+   width: 100%;
+   padding: 8px;
+   margin-bottom: 16px;
+   box-sizing: border-box;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+}
+
+input[type="button"] {
+   background-color: #f03a26;
+   color: #fff;
+   padding: 10px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+input[type="button"]:hover {
+   background-color: hsl(189, 87%, 52%);
+}

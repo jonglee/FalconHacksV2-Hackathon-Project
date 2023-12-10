@@ -138,3 +138,34 @@ function removeSchedule(button) {
 
 
 
+// update profile
+function saveChanges() {
+    var newName = document.getElementById("newName").value;
+    var newAddress = document.getElementById("newAddress").value;
+    var newEmail = document.getElementById("newEmail").value;
+    var newNumber = document.getElementById("newNumber").value;
+
+
+    localStorage.setItem("newName", newName);
+    localStorage.setItem("newAddress", newAddress);
+    localStorage.setItem("newEmail", newEmail);
+    localStorage.setItem("newNumber", newNumber);
+
+    
+    window.location.href = "profile.html";
+}
+var newName = localStorage.getItem("newName");
+   var newAddress = localStorage.getItem("newAddress");
+   var newEmail = localStorage.getItem("newEmail");
+   var newNumber = localStorage.getItem("newNumber");
+
+
+   var dataDiv = document.querySelector('.data');
+   dataDiv.innerHTML = `
+       <h3>My Profile</h3>
+       <p>Name: ${newName}</p>
+       <p>Address: ${newAddress}</p>
+       <p>Email: ${newEmail}</p>
+       <p>Phone Number: ${newNumber}</p>
+    
+   `;

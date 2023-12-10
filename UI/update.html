@@ -4,13 +4,12 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>profile</title>
+   <title>home</title>
 
-   <!-- font awesome cdn link  -->
+  
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 
-   <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
@@ -62,30 +61,20 @@
             </nav>
 </div>
 
-<section class="user-profile">
 
-   <h1 class="heading">your profile</h1>
+<form id="updateForm">
+    <label for="newName">New Name:</label>
+    <input type="text" id="newName" name="newName">
+    <label for="newAddress">New Address:</label>
+    <input type="text" id="newName" name="newName">
+    <label for="newEmail">New Email:</label>
+    <input type="text" id="newName" name="newName">
+    <label for="newNumber">New Phone Number:</label>
+    <input type="number" id="newNumber" name="newNumber">
+  
 
-   <div class="info">
-
-      <div class="user">
-         <img src="images/pic-1.jpg" alt="">
-         <h3>User</h3>
-         <a href="update.html" class="inline-btn">update profile</a>
-         <div class="data">
-         <form action="" method="post" enctype="multipart/form-data">
-            <h3>My Profile</h3>
-            <p>Name</p>
-            <p>Address</p> 
-            <p>Email</p>
-            <p>Phone Number</p>
-         </form>
-         </div>
-      </div>
-   
-      
-
-</section>
+    <input type="button" value="Save" onclick="saveChanges()">
+</form>
 
 
 
