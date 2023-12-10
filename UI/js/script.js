@@ -70,7 +70,7 @@ const listContainer = document.getElementById("list-container");
 
 function addTask(){
     if(inputBox.value === ''){
-        alert("Úi! Hình như bạn quên thêm công việc của mình rồi.");
+        alert("Ouch! Looks like you forgot to add your work.");
     }
     else{
         let li = document.createElement("li");
@@ -139,6 +139,7 @@ function removeSchedule(button) {
 
 
 // update profile
+
 function saveChanges() {
     var newName = document.getElementById("newName").value;
     var newAddress = document.getElementById("newAddress").value;
@@ -169,3 +170,31 @@ var newName = localStorage.getItem("newName");
        <p>Phone Number: ${newNumber}</p>
     
    `;
+
+
+
+// chat room
+function sendMessage() {
+    var messageInput = document.getElementById('message-input');
+    var message = messageInput.value;
+  
+    if (message.trim() !== '') {
+      var chatMessages = document.getElementById('chat-messages');
+      var newMessage = document.createElement('div');
+      newMessage.textContent = message;
+      chatMessages.appendChild(newMessage);
+  
+
+      messageInput.value = '';
+  
+
+    }
+  }
+  function clearChat() {
+    var chatMessages = document.getElementById('chat-messages');
+  
+
+    while (chatMessages.firstChild) {
+      chatMessages.removeChild(chatMessages.firstChild);
+    }
+  }  
